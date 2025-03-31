@@ -1,0 +1,54 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header-spacing {
+    margin-top: 1600px; /* Adjust as needed */
+  }
+  
+  .book-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .images img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .chef-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .chef-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chef-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  

@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding-top: 80px; /* Adjust based on navbar height */
+}

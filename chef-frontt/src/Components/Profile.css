@@ -1,0 +1,100 @@
+/* Profile Container */
+.profile-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Profile Left Section */
+.profile-left {
+    width: 60%;
+}
+
+.welcome-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.role-text {
+    color: #555;
+    font-size: 16px;
+}
+
+.edit-profile-btn {
+    padding: 8px 15px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.quick-actions {
+    margin-top: 20px;
+}
+
+.quick-actions button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #ffcc00;
+}
+
+/* Profile Right Section */
+.profile-right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ff9800;
+}
+
+/* Bookings Section */
+.bookings-container {
+    margin-top: 30px;
+}
+
+.booking-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 5px solid #ff9800;
+}
+
+.booking-item p {
+    margin: 5px 0;
+}
+
+.status-confirmed {
+    color: green;
+    font-weight: bold;
+}
+
+.status-completed {
+    color: blue;
+    font-weight: bold;
+}

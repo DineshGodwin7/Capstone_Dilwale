@@ -1,0 +1,155 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #ffcc33, #ff6600);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+/* Logo and Brand */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 8px 15px;
+  width: 250px; /* Reduced width to fit in single row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-container .search-icon {
+  color: #000;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.search-container .search-icon:hover {
+  color: #ff6600;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px; /* Reduced gap to fit items */
+  flex-wrap: nowrap; /* Keeps items in a single row */
+}
+
+.nav-links li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* Location Icon */
+.location-icon {
+  margin-left: 5px;
+  color: black;
+}
+
+/* Login/Signup Button */
+.login-btn {
+  width: 250px;
+  background: black;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px; /* Standard button size */
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.login-btn:hover {
+  background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+
+  .search-container {
+    width: 200px; /* Adjusted for smaller screens */
+  }
+
+  .nav-links {
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
+
+  .login-btn {
+    padding: 8px 14px; /* Adjusted padding for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links on small screens if necessary */
+  }
+
+  .search-container {
+    width: 180px; /* Smaller width for compact design */
+  }
+
+  .login-btn {
+    padding: 7px 12px; /* Smaller padding for mobile */
+  }
+}
